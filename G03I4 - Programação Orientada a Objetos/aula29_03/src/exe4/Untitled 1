@@ -1,0 +1,17 @@
+1 - Quando  executado o programa tenta acessar um atributo ou método com valor vazio, 
+	é retornada a exceção "NullPointerException",
+	isso acontece devido a definição do "tipo" de valor o qual a 
+	linguagem Java torna digamos que obrigatório.
+	Exemplo:
+	
+	String x = null;
+	Sysout.print(x); 
+	
+
+2 - Quando a aplicação em execução encontra uma divisão por 0, 
+	é retornado "arithmetic exception", pois ná é possível dividir números por 0;
+	Exemplo:
+	
+	Double a = 5, b = 0;
+	Double divisao : a / b;
+	  
