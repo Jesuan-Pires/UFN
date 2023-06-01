@@ -300,3 +300,5 @@ select Projnumero, Dnumero, Unome, Endereco, Datanasc from funcionario inner joi
 select f.Unome, s.Pnome from funcionario as f left join funcionario as s on f.cpf_supervisor = s.Cpf;
 select Unome, Pnome from funcionario left join dependente on cpf = FCpf;
 select * from funcionario cross join dependente order by pnome;
+select count(Endereco = "SP") from funcionario;
+select count(Cpf) from funcionario group by endereco like "%São Paulo, SP%"; #agrupando quem mora em sp e quem nao mora
