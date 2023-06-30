@@ -1,4 +1,6 @@
-public class Produto {
+import java.io.Serializable;
+
+public class Produto implements Serializable{
 	
 	private String codigo;
 	private String descricao;
@@ -12,6 +14,11 @@ public class Produto {
 		this.descricao = descricao;
 		this.precoCusto = precoCusto;
 		this.precoVenda = precoVenda;
+		this.estoqueDisponivel = estoqueDisponivel;
+	}
+	
+	public Produto(String codigo, int estoqueDisponivel) {
+		this.codigo = codigo;
 		this.estoqueDisponivel = estoqueDisponivel;
 	}
 
@@ -51,4 +58,5 @@ public class Produto {
 				", Preço de venda: " + precoVenda +
 				", Estoque Disponível: " + estoqueDisponivel;
 	}
+
 } 
